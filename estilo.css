@@ -1,0 +1,259 @@
+body{
+    font-family: "Encode Sans", sans-serif;
+    color: #F5F6F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.conteudo-pagina{
+    width: calc(100vw - 40px);
+    margin: 0 150px; /*0 = eixo y / 175 = eixo x*/ 
+    /*Eu coloquei essa margem de 175 na horizontal porque a tela tem 1600 pixels - 1250 que é o tamanho do conteudo que o site ocupa
+    então sobrando 350 pixels de espaço nas duas bordas, ou seja, 175 de cada lado.*/   
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+}
+
+.barra-superior {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    border-top: 1px solid #F5F6F7;
+    border-bottom: 1px solid #F5F6F7;
+    margin-bottom: 20px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.botoes a {
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 10px;
+} 
+
+.botoes a:nth-child(1) {
+    color: #C3170C; 
+}
+.botoes a:nth-child(2) {
+    color: #1E4B9B; 
+}
+.botoes a:nth-child(3) {
+    color: #006766; 
+}
+.botoes a:nth-child(4) {
+    color: #07AA47; 
+}
+.botoes a:nth-child(5) {
+    color: #E3662B; 
+}
+.botoes a:nth-child(6) {
+    color: #FB0735; 
+}
+.botoes a:nth-child(7) {
+    color: #FF75BB; 
+}
+.botoes a:nth-child(8) {
+    color: #EC7D00; 
+}
+.botoes a:nth-child(9) {
+    color: #323333; 
+}
+.botoes a:nth-child(10) {
+    color: #A81D83; 
+}
+.botoes a:hover {
+    filter: brightness(150%); 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.informacoes{
+    display: flex;
+    align-items: center;
+}
+
+.informacoes-esquerda{
+    /*width: 660px;*/
+    width: 40vw;
+    flex: 1 1 60%;
+    height: auto;
+    height: 850px;
+}
+
+.materias{
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #EBEDEF;
+}
+
+.materia-principal{
+    font-size: 52px;
+    font-weight: bold;
+    color: #C4160C;
+    margin-right: 10px;
+    line-height: 1.2;
+    transition: filter 0.3s ease;
+}
+
+.materia-principal:hover {
+    filter: brightness(150%);
+}
+
+.materia-secundaria{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #303134;
+    margin-bottom: 25px;
+}
+
+.materia-secundaria h2{
+    margin-bottom: 10px;
+}
+
+.imagens-materias{
+    height: 490px;
+    
+}
+
+.linha-1{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-right: 5px;
+}
+
+.noticia{
+    flex: 1;
+    margin-right: 10px;
+    height: 290px;
+}
+
+.noticia img {
+    transition: filter 0.3s ease;
+}
+.noticia img:hover {
+    filter: brightness(50%);
+}
+
+.titulo-imagem{
+    font-size: 14px;
+    color: #C4170C;
+    margin-top: 10px;
+    transition: filter 0.3s ease;
+}
+
+.titulo-imagem:hover {
+    filter: brightness(150%);
+}
+
+.titulo-destaque{
+    font-size: 20px;
+    font-weight: bold;
+    color:#2F3134;
+    margin-top: 8px;
+    line-height: 1.2;
+    transition: filter 0.3s ease;
+    
+}
+
+.titulo-destaque:hover {
+    filter: brightness(0%);
+}
+
+.subtitulo{
+    font-size: 14px;
+    color: #2F3134;
+    margin-top: 10px;
+    line-height: 1.2;
+}
+
+.linha-2{
+    display: flex;
+    height: 190px;
+    padding-top: 20px;
+    border-top: 1px solid #EBEDEF;
+
+}
+
+.informacoes-direita{
+    width: 590px;
+    height: auto;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20px;
+    border-left: 1px solid #EBEDEF;
+
+    flex: 1 1 30%;
+    height: auto;
+}
+
+.coluna-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:310px;
+    border-right: 1px solid #EBEDEF;
+}
+
+.noticia-2{
+    padding: 0px 40px 40px 40px;
+
+}
+
+.noticia-2 .titulo-imagem{
+    color: #16AE54;
+}
+
+.noticia-2 img{
+    width: 240px;
+    height: 128px;
+    border-radius: 12px;
+    transition: filter 0.3s ease;
+}
+
+.noticia-2 img:hover {
+    filter: brightness(50%);
+}
+
+.coluna-2{
+    width: 280;
+}
+
+.coluna-2 .noticia-2 .titulo-imagem{
+    color: #EC8006;
+}
+
+@media (max-width: 2) {}/*aqui colocar para o texto principal ocupar a pagina inteira ao descer o menu da direita*/
+@media (max-width: 1200px ) {
+    .informacoes{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 600px) {
+        .botoes a:nth-child(3), 
+        .botoes a:nth-child(5),
+        .botoes a:nth-child(8), 
+        .botoes a:nth-child(9), 
+        .botoes a:nth-child(10) {
+            display: none;
+        }
+    }
